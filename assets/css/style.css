@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: #53fd53;
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+/* Affirmations Section Styling */
+#affirmations h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #f8f9fa;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+/* Affirmations List */
+.affirmations-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Max width for better readability */
+}
+
+/* Individual List Items with Different Pastel Colors */
+.affirmations-list li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+/* Different pastel colors for each list item */
+.affirmations-list li:nth-child(1) {
+    background-color: #fddde6; /* Pastel Pink */
+}
+
+.affirmations-list li:nth-child(2) {
+    background-color: #d4e8e2; /* Pastel Green */
+}
+
+.affirmations-list li:nth-child(3) {
+    background-color: #fcf1dd; /* Pastel Yellow */
+}
+
+.affirmations-list li:nth-child(4) {
+    background-color: #dfe6fd; /* Pastel Blue */
+}
+
+.affirmations-list li:nth-child(5) {
+    background-color: #fbe4d6; /* Pastel Orange */
+}
+
+.affirmations-list li:nth-child(6) {
+    background-color: #e5d5f5; /* Pastel Lavender */
+}
+
+/* Hover Effect */
+.affirmations-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .affirmations-list li {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    #affirmations h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .affirmations-list li {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    #affirmations h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* YouTube Videos Section */
+#videos h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #f8f9fa;
+    margin-bottom: 40px;
+}
+
+/* YouTube Thumbnails */
+.youtube-thumbnails {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.youtube-thumbnails li {
+    text-align: center;
+    flex-basis: calc(33.333% - 40px); /* Three columns */
+    max-width: 300px;
+}
+
+.youtube-thumbnails a {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.youtube-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.youtube-thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.youtube-thumbnails p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f8f9fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .youtube-thumbnails li {
+        flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .youtube-thumbnails li {
+        flex-basis: 100%; /* One column on mobile */
+    }
+}
+
+
+a:hover {
+    color: white;
+    text-decoration: underline wavy;
+  }
+  
+  
+  @media (pointer: coarse) {
+    a:hover {
+      all: revert-layer;
+    }
+  }
